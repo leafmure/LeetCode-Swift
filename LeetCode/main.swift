@@ -9,5 +9,5 @@ import Foundation
 
 print("Hello, World!")
 
-let objc = TwoSumTest()
+let objc = AddTwoNumbersTest()
 objc.test()

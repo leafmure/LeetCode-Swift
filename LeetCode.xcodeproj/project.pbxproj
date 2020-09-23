@@ -11,6 +11,8 @@
 		041FDF4A2519EF960003DFB9 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FDF492519EF960003DFB9 /* TwoSum.swift */; };
 		041FDF4D2519EFF70003DFB9 /* TwoSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FDF4C2519EFF70003DFB9 /* TwoSumTest.swift */; };
 		041FDF502519F0520003DFB9 /* TestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FDF4F2519F0520003DFB9 /* TestProtocol.swift */; };
+		04E6D021251B5A98000DE714 /* AddTwoNumbersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6D01E251B5A98000DE714 /* AddTwoNumbersTest.swift */; };
+		04E6D022251B5A98000DE714 /* AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6D01F251B5A98000DE714 /* AddTwoNumbers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,10 +30,13 @@
 /* Begin PBXFileReference section */
 		041FDF3B2519EEEF0003DFB9 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		041FDF3E2519EEEF0003DFB9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		041FDF472519EF5B0003DFB9 /* 1.Two Sum - 两数之和.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "1.Two Sum - 两数之和.md"; sourceTree = "<group>"; };
+		041FDF472519EF5B0003DFB9 /* 1.Two Sum-两数之和.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "1.Two Sum-两数之和.md"; sourceTree = "<group>"; };
 		041FDF492519EF960003DFB9 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		041FDF4C2519EFF70003DFB9 /* TwoSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTest.swift; sourceTree = "<group>"; };
 		041FDF4F2519F0520003DFB9 /* TestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProtocol.swift; sourceTree = "<group>"; };
+		04E6D01E251B5A98000DE714 /* AddTwoNumbersTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoNumbersTest.swift; sourceTree = "<group>"; };
+		04E6D01F251B5A98000DE714 /* AddTwoNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers.swift; sourceTree = "<group>"; };
+		04E6D020251B5A98000DE714 /* 2.Add Two Numbers-两数相加.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "2.Add Two Numbers-两数相加.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,21 +69,32 @@
 		041FDF3D2519EEEF0003DFB9 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
-				041FDF462519EF2A0003DFB9 /* 1.Two Sum - 两数之和 */,
+				041FDF462519EF2A0003DFB9 /* 1.Two Sum-两数之和 */,
+				04E6D01D251B5A98000DE714 /* 2.Add Two Numbers-两数相加 */,
 				041FDF3E2519EEEF0003DFB9 /* main.swift */,
 				041FDF4F2519F0520003DFB9 /* TestProtocol.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
 		};
-		041FDF462519EF2A0003DFB9 /* 1.Two Sum - 两数之和 */ = {
+		041FDF462519EF2A0003DFB9 /* 1.Two Sum-两数之和 */ = {
 			isa = PBXGroup;
 			children = (
-				041FDF472519EF5B0003DFB9 /* 1.Two Sum - 两数之和.md */,
+				041FDF472519EF5B0003DFB9 /* 1.Two Sum-两数之和.md */,
 				041FDF492519EF960003DFB9 /* TwoSum.swift */,
 				041FDF4C2519EFF70003DFB9 /* TwoSumTest.swift */,
 			);
-			path = "1.Two Sum - 两数之和";
+			path = "1.Two Sum-两数之和";
+			sourceTree = "<group>";
+		};
+		04E6D01D251B5A98000DE714 /* 2.Add Two Numbers-两数相加 */ = {
+			isa = PBXGroup;
+			children = (
+				04E6D020251B5A98000DE714 /* 2.Add Two Numbers-两数相加.md */,
+				04E6D01F251B5A98000DE714 /* AddTwoNumbers.swift */,
+				04E6D01E251B5A98000DE714 /* AddTwoNumbersTest.swift */,
+			);
+			path = "2.Add Two Numbers-两数相加";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E6D021251B5A98000DE714 /* AddTwoNumbersTest.swift in Sources */,
 				041FDF4A2519EF960003DFB9 /* TwoSum.swift in Sources */,
 				041FDF3F2519EEEF0003DFB9 /* main.swift in Sources */,
+				04E6D022251B5A98000DE714 /* AddTwoNumbers.swift in Sources */,
 				041FDF4D2519EFF70003DFB9 /* TwoSumTest.swift in Sources */,
 				041FDF502519F0520003DFB9 /* TestProtocol.swift in Sources */,
 			);

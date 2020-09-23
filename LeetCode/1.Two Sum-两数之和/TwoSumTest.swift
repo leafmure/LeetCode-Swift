@@ -13,6 +13,10 @@ class TwoSumTest:TestProtocol {
     let target = 9
     let checkList = [0,2]
     
+    func testData() {
+        
+    }
+    
     func testTargetCode() -> Any {
         return TwoSum.twoSum2(numbers, target)
     }

@@ -11,6 +11,8 @@ protocol TestProtocol {
     
     /// 开始测试
     func test()
+    /// 准备测试数据
+    func testData()
     /// 测试体
     func testTargetCode() -> Any
     /// 检验结果
@@ -20,6 +22,8 @@ protocol TestProtocol {
 extension TestProtocol {
     
     func test() {
+        
+        testData()
         let startTime = CFAbsoluteTimeGetCurrent()
         let result = testTargetCode()
         let linkTime = CFAbsoluteTimeGetCurrent() - startTime
