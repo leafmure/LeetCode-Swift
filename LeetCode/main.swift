@@ -9,5 +9,5 @@ import Foundation
 
 print("Hello, World!")
 
-let objc = AddTwoNumbersTest()
+let objc = LongestNoRepeatSubstringTest()
 objc.test()

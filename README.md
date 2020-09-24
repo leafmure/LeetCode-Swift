@@ -10,4 +10,5 @@ LeetCode 是一个在线评判算法解题的网站，题库中包含许多公�
 | Title (1/1806) | Language | Time | Space | Difficulty |
 |----|---|---|---|---|
 |1.Two Sum - 两数之和| Swift | O(n) | O(n) | 简单 |
-|2.Add Two Numbers-两数相加| Swift | O(n) | O(n) | 中等 |
+|2.Add Two Numbers - 两数相加| Swift | O(n) | O(n) | 中等 |
+|3.Longest Substring Without Repeating Characters - 无重复字符的最长子串| Swift | O(n) | O(n) | 中等 |
