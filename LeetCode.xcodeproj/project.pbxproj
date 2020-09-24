@@ -11,6 +11,8 @@
 		041FDF4A2519EF960003DFB9 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FDF492519EF960003DFB9 /* TwoSum.swift */; };
 		041FDF4D2519EFF70003DFB9 /* TwoSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FDF4C2519EFF70003DFB9 /* TwoSumTest.swift */; };
 		041FDF502519F0520003DFB9 /* TestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FDF4F2519F0520003DFB9 /* TestProtocol.swift */; };
+		04341CC6251C711A00D9B9C9 /*  LongestNoRepeatSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04341CC5251C711A00D9B9C9 /*  LongestNoRepeatSubstring.swift */; };
+		04341CC9251C747D00D9B9C9 /*  LongestNoRepeatSubstringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04341CC8251C747D00D9B9C9 /*  LongestNoRepeatSubstringTest.swift */; };
 		04E6D021251B5A98000DE714 /* AddTwoNumbersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6D01E251B5A98000DE714 /* AddTwoNumbersTest.swift */; };
 		04E6D022251B5A98000DE714 /* AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6D01F251B5A98000DE714 /* AddTwoNumbers.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,9 @@
 		041FDF492519EF960003DFB9 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		041FDF4C2519EFF70003DFB9 /* TwoSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTest.swift; sourceTree = "<group>"; };
 		041FDF4F2519F0520003DFB9 /* TestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProtocol.swift; sourceTree = "<group>"; };
+		04341CC5251C711A00D9B9C9 /*  LongestNoRepeatSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " LongestNoRepeatSubstring.swift"; sourceTree = "<group>"; };
+		04341CC8251C747D00D9B9C9 /*  LongestNoRepeatSubstringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " LongestNoRepeatSubstringTest.swift"; sourceTree = "<group>"; };
+		04341CCC251CA51900D9B9C9 /* 3.Longest Substring Without Repeating Characters-无重复字符的最长子串.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "3.Longest Substring Without Repeating Characters-无重复字符的最长子串.md"; sourceTree = "<group>"; };
 		04E6D01E251B5A98000DE714 /* AddTwoNumbersTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoNumbersTest.swift; sourceTree = "<group>"; };
 		04E6D01F251B5A98000DE714 /* AddTwoNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers.swift; sourceTree = "<group>"; };
 		04E6D020251B5A98000DE714 /* 2.Add Two Numbers-两数相加.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "2.Add Two Numbers-两数相加.md"; sourceTree = "<group>"; };
@@ -71,6 +76,7 @@
 			children = (
 				041FDF462519EF2A0003DFB9 /* 1.Two Sum-两数之和 */,
 				04E6D01D251B5A98000DE714 /* 2.Add Two Numbers-两数相加 */,
+				04341CC4251C70A500D9B9C9 /* 3.Longest Substring Without Repeating Characters-无重复字符的最长子串 */,
 				041FDF3E2519EEEF0003DFB9 /* main.swift */,
 				041FDF4F2519F0520003DFB9 /* TestProtocol.swift */,
 			);
@@ -85,6 +91,16 @@
 				041FDF4C2519EFF70003DFB9 /* TwoSumTest.swift */,
 			);
 			path = "1.Two Sum-两数之和";
+			sourceTree = "<group>";
+		};
+		04341CC4251C70A500D9B9C9 /* 3.Longest Substring Without Repeating Characters-无重复字符的最长子串 */ = {
+			isa = PBXGroup;
+			children = (
+				04341CCC251CA51900D9B9C9 /* 3.Longest Substring Without Repeating Characters-无重复字符的最长子串.md */,
+				04341CC5251C711A00D9B9C9 /*  LongestNoRepeatSubstring.swift */,
+				04341CC8251C747D00D9B9C9 /*  LongestNoRepeatSubstringTest.swift */,
+			);
+			path = "3.Longest Substring Without Repeating Characters-无重复字符的最长子串";
 			sourceTree = "<group>";
 		};
 		04E6D01D251B5A98000DE714 /* 2.Add Two Numbers-两数相加 */ = {
@@ -155,6 +171,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E6D021251B5A98000DE714 /* AddTwoNumbersTest.swift in Sources */,
+				04341CC9251C747D00D9B9C9 /*  LongestNoRepeatSubstringTest.swift in Sources */,
+				04341CC6251C711A00D9B9C9 /*  LongestNoRepeatSubstring.swift in Sources */,
 				041FDF4A2519EF960003DFB9 /* TwoSum.swift in Sources */,
 				041FDF3F2519EEEF0003DFB9 /* main.swift in Sources */,
 				04E6D022251B5A98000DE714 /* AddTwoNumbers.swift in Sources */,
