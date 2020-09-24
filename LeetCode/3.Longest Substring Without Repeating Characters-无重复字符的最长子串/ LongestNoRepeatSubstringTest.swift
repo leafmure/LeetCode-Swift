@@ -13,13 +13,7 @@ class LongestNoRepeatSubstringTest:TestProtocol {
     var check:Int = 0
     
     func testData() {
-        // abba
-//        input = "dacadbba"
-//        check = 4
-//
-//        input = "absdioj"
-//        check = 2
-//
+
         input = "tmmzuxt"
         check = 5
     }
