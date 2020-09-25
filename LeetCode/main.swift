@@ -9,5 +9,5 @@ import Foundation
 
 print("Hello, World!")
 
-let objc = LongestNoRepeatSubstringTest()
+let objc = MedianTwoSortedArrayTest()
 objc.test()
