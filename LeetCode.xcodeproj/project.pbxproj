@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041421F3252089E900EA4F06 /* ZigZagConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041421F2252089E900EA4F06 /* ZigZagConversion.swift */; };
+		041421F625208E1F00EA4F06 /* ZigZagConversionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041421F525208E1F00EA4F06 /* ZigZagConversionTest.swift */; };
 		041FDF3F2519EEEF0003DFB9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FDF3E2519EEEF0003DFB9 /* main.swift */; };
 		041FDF4A2519EF960003DFB9 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FDF492519EF960003DFB9 /* TwoSum.swift */; };
 		041FDF4D2519EFF70003DFB9 /* TwoSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FDF4C2519EFF70003DFB9 /* TwoSumTest.swift */; };
 		041FDF502519F0520003DFB9 /* TestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FDF4F2519F0520003DFB9 /* TestProtocol.swift */; };
 		04341CC6251C711A00D9B9C9 /*  LongestNoRepeatSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04341CC5251C711A00D9B9C9 /*  LongestNoRepeatSubstring.swift */; };
 		04341CC9251C747D00D9B9C9 /*  LongestNoRepeatSubstringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04341CC8251C747D00D9B9C9 /*  LongestNoRepeatSubstringTest.swift */; };
+		047A7C1425202FA600CD6E93 /* LongestPalindromicSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A7C1325202FA600CD6E93 /* LongestPalindromicSubstring.swift */; };
+		047A7C1825202FED00CD6E93 /* LongestPalindromicSubstringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A7C1725202FED00CD6E93 /* LongestPalindromicSubstringTest.swift */; };
 		04E6D021251B5A98000DE714 /* AddTwoNumbersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6D01E251B5A98000DE714 /* AddTwoNumbersTest.swift */; };
 		04E6D022251B5A98000DE714 /* AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6D01F251B5A98000DE714 /* AddTwoNumbers.swift */; };
 		04E74EDF251D933100927E76 /* MedianTwoSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E74EDE251D933100927E76 /* MedianTwoSortedArray.swift */; };
@@ -32,6 +36,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		041421F2252089E900EA4F06 /* ZigZagConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagConversion.swift; sourceTree = "<group>"; };
+		041421F525208E1F00EA4F06 /* ZigZagConversionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagConversionTest.swift; sourceTree = "<group>"; };
 		041FDF3B2519EEEF0003DFB9 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		041FDF3E2519EEEF0003DFB9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		041FDF472519EF5B0003DFB9 /* 1.Two Sum-两数之和.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "1.Two Sum-两数之和.md"; sourceTree = "<group>"; };
@@ -41,6 +47,9 @@
 		04341CC5251C711A00D9B9C9 /*  LongestNoRepeatSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " LongestNoRepeatSubstring.swift"; sourceTree = "<group>"; };
 		04341CC8251C747D00D9B9C9 /*  LongestNoRepeatSubstringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " LongestNoRepeatSubstringTest.swift"; sourceTree = "<group>"; };
 		04341CCC251CA51900D9B9C9 /* 3.Longest Substring Without Repeating Characters-无重复字符的最长子串.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "3.Longest Substring Without Repeating Characters-无重复字符的最长子串.md"; sourceTree = "<group>"; };
+		047A7C1325202FA600CD6E93 /* LongestPalindromicSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstring.swift; sourceTree = "<group>"; };
+		047A7C1725202FED00CD6E93 /* LongestPalindromicSubstringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstringTest.swift; sourceTree = "<group>"; };
+		047A7C1B25207A3A00CD6E93 /* 5.Longest Palindromic Substring-最长回文子串.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "5.Longest Palindromic Substring-最长回文子串.md"; sourceTree = "<group>"; };
 		04E6D01E251B5A98000DE714 /* AddTwoNumbersTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoNumbersTest.swift; sourceTree = "<group>"; };
 		04E6D01F251B5A98000DE714 /* AddTwoNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers.swift; sourceTree = "<group>"; };
 		04E6D020251B5A98000DE714 /* 2.Add Two Numbers-两数相加.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "2.Add Two Numbers-两数相加.md"; sourceTree = "<group>"; };
@@ -60,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041421F12520898100EA4F06 /* 6.ZigZag Conversion-Z 字形变换 */ = {
+			isa = PBXGroup;
+			children = (
+				041421F2252089E900EA4F06 /* ZigZagConversion.swift */,
+				041421F525208E1F00EA4F06 /* ZigZagConversionTest.swift */,
+			);
+			path = "6.ZigZag Conversion-Z 字形变换";
+			sourceTree = "<group>";
+		};
 		041FDF322519EEEF0003DFB9 = {
 			isa = PBXGroup;
 			children = (
@@ -79,10 +97,12 @@
 		041FDF3D2519EEEF0003DFB9 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				041421F12520898100EA4F06 /* 6.ZigZag Conversion-Z 字形变换 */,
 				041FDF462519EF2A0003DFB9 /* 1.Two Sum-两数之和 */,
 				04E6D01D251B5A98000DE714 /* 2.Add Two Numbers-两数相加 */,
 				04341CC4251C70A500D9B9C9 /* 3.Longest Substring Without Repeating Characters-无重复字符的最长子串 */,
 				04E74EDD251D92D300927E76 /* 4.Median of Two Sorted Arrays-寻找两个正序数组的中位数 */,
+				047A7C1225202F5800CD6E93 /* 5.Longest Palindromic Substring-最长回文子串 */,
 				041FDF3E2519EEEF0003DFB9 /* main.swift */,
 				041FDF4F2519F0520003DFB9 /* TestProtocol.swift */,
 			);
@@ -107,6 +127,16 @@
 				04341CC8251C747D00D9B9C9 /*  LongestNoRepeatSubstringTest.swift */,
 			);
 			path = "3.Longest Substring Without Repeating Characters-无重复字符的最长子串";
+			sourceTree = "<group>";
+		};
+		047A7C1225202F5800CD6E93 /* 5.Longest Palindromic Substring-最长回文子串 */ = {
+			isa = PBXGroup;
+			children = (
+				047A7C1B25207A3A00CD6E93 /* 5.Longest Palindromic Substring-最长回文子串.md */,
+				047A7C1325202FA600CD6E93 /* LongestPalindromicSubstring.swift */,
+				047A7C1725202FED00CD6E93 /* LongestPalindromicSubstringTest.swift */,
+			);
+			path = "5.Longest Palindromic Substring-最长回文子串";
 			sourceTree = "<group>";
 		};
 		04E6D01D251B5A98000DE714 /* 2.Add Two Numbers-两数相加 */ = {
@@ -188,10 +218,14 @@
 			files = (
 				04E6D021251B5A98000DE714 /* AddTwoNumbersTest.swift in Sources */,
 				04E74EE3251D934C00927E76 /* MedianTwoSortedArrayTest.swift in Sources */,
+				047A7C1425202FA600CD6E93 /* LongestPalindromicSubstring.swift in Sources */,
+				041421F3252089E900EA4F06 /* ZigZagConversion.swift in Sources */,
 				04E74EDF251D933100927E76 /* MedianTwoSortedArray.swift in Sources */,
+				041421F625208E1F00EA4F06 /* ZigZagConversionTest.swift in Sources */,
 				04341CC9251C747D00D9B9C9 /*  LongestNoRepeatSubstringTest.swift in Sources */,
 				04341CC6251C711A00D9B9C9 /*  LongestNoRepeatSubstring.swift in Sources */,
 				041FDF4A2519EF960003DFB9 /* TwoSum.swift in Sources */,
+				047A7C1825202FED00CD6E93 /* LongestPalindromicSubstringTest.swift in Sources */,
 				041FDF3F2519EEEF0003DFB9 /* main.swift in Sources */,
 				04E6D022251B5A98000DE714 /* AddTwoNumbers.swift in Sources */,
 				041FDF4D2519EFF70003DFB9 /* TwoSumTest.swift in Sources */,

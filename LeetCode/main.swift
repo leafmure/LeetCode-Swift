@@ -9,5 +9,5 @@ import Foundation
 
 print("Hello, World!")
 
-let objc = MedianTwoSortedArrayTest()
+let objc = ZigZagConversionTest()
 objc.test()
