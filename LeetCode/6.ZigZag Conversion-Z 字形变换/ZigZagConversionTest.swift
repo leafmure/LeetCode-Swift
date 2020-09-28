@@ -14,9 +14,9 @@ class ZigZagConversionTest: TestProtocol {
     var check = ""
     
     func testData() {
-        input = "ABC"
-        rows = 2
-        check = "LDREOEIIECIHNTSG"
+        input = "LEETCODEISHIRING"
+        rows = 3
+        check = "LCIRETOESIIGEDHN"
     }
     
     func testTargetCode() -> Any {

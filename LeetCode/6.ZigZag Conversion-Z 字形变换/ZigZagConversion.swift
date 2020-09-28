@@ -9,43 +9,54 @@ import Foundation
 
 class ZigZagConversion {
     
+    /**
+     遍历 numRows，计算出每 row 的字符串位置
+     */
     static func convert(_ s: String, _ numRows: Int) -> String {
         
-        if s.count <= 2 || numRows == 1 {
+        if numRows == 1 || s.count < 3 {
             return s
         }
         
-        let compent = 2 * numRows - 2
-        var tab = Array(repeating: "", count: numRows)
-        for (index, char) in s.enumerated() {
+        let charArray:Array<Character> = Array(s)
+        let length:Int = charArray.count
+        let component:Int = 2 * numRows - 2
+        var result:String = ""
+        for row in 0..<numRows {
             
-            let mod = index % compent
-            if mod < numRows {
-                tab[mod].append("\(char)")
-            } else {
-                let tempindex = 2 * numRows - 2 - mod
-                tab[tempindex].append("\(char)")
+            var n:Int = 0
+            while n + row < length {
+                result.append(String(charArray[row + n]))
+                if row != 0 && row != numRows - 1 && n + component - row < length {
+                    result.append(String(charArray[n + component - row]))
+                }
+                n += component
             }
         }
-        return tab.joined()
+        return result
     }
     
+    /**
+     遍历字符串计算字符输出后所在位置
+     */
     static func convert2(_ s: String, _ numRows: Int) -> String {
         
-        if s.count <= 2 || numRows == 1 {
+        if numRows == 1 || s.count < 3 {
             return s
         }
         
-        let compent = 2 * numRows - 2
-        var result = ""
-        for index1 in 0..<compent {
+        let component = 2 * numRows - 2
+        var array = Array(repeating: "", count: numRows)
+        for (index, char) in s.enumerated() {
             
-            for index2 in numRows...0 {
-                
-                
+            let mod = index % component
+            if mod < numRows {
+                array[mod].append(String(char))
+            } else {
+                array[component - mod].append(String(char))
             }
         }
-        
-        return ""
+        return array.joined()
     }
+    
 }

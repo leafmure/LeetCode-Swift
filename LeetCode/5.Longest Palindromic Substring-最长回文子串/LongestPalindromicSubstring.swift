@@ -21,18 +21,18 @@ class LongestPalindromicSubstring {
         var index = 0
         while index < unicodeScalars.count {
             
-            var low = index; var height = index;
-            while height < unicodeScalars.count - 1 && unicodeScalars[height + 1] == unicodeScalars[low] {
-                height = height + 1
+            var low = index; var high = index;
+            while high < unicodeScalars.count - 1 && unicodeScalars[high + 1] == unicodeScalars[low] {
+                high = high + 1
             }
             
-            index = height
-            while low > 0 && height < unicodeScalars.count - 1 && unicodeScalars[low - 1] == unicodeScalars[height + 1] {
+            index = high
+            while low > 0 && high < unicodeScalars.count - 1 && unicodeScalars[low - 1] == unicodeScalars[high + 1] {
                 low = low - 1
-                height = height + 1
+                high = high + 1
             }
             
-            let tempLength = height - low + 1
+            let tempLength = high - low + 1
             if tempLength > maxLength {
                 maxLocation = low
                 maxLength = tempLength
