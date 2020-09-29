@@ -13,7 +13,7 @@ class StringToIntegerTest: TestProtocol {
     var check = 0
     
     func testData() {
-        intput = "42"
+        intput = " -42"
         check = 42
     }
     

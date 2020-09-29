@@ -9,102 +9,48 @@ import Foundation
 
 class StringToInteger {
     
+    // space: 32; -: 45; + : 43; 0-9: 48-57
     static func myAtoi(_ str: String) -> Int {
-        // space 32
+        
         let unicodeScalars = str.unicodeScalars.map { $0.value }
-        var resultString = ""
-        let checkTable:[UInt32:Bool] = [48:true, 49:true, 50:true, 51:true, 52:true, 53:true, 54:true, 55:true, 56:true, 57:true]
-        let checkTable2:[UInt32:Bool] = [43:true, 45:true]
-        var firstUnicode:UInt32?
-        for unicode in unicodeScalars {
-            
-            if unicode == 32 {
-                continue
-            }
-            
-            if checkTable[unicode] ?? false || (checkTable2[unicode] ?? false && resultString.count == 0) {
-                break
-            }
-            
-            if checkTable[unicode] ?? false {
-                resultString.append(String(UnicodeScalar(unicode)!))
-            } else if resultString.count == 0 && (checkTable2[unicode] ?? false) {
-                firstUnicode = unicode
-                resultString.append(String(UnicodeScalar(unicode)!))
-            }
+        let length = unicodeScalars.count
+        
+        var index = 0
+        while index < length && unicodeScalars[index] == 32 {
+            index += 1
         }
         
-        guard let result = Int(resultString) else {
-            
-            if resultString.count > 11 {
-                
-                if firstUnicode == 45 {
-                    return Int(Int32.min)
-                } else {
-                    return Int(Int32.max)
-                }
-            } else {
-                return 0
-            }
-        }
-        
-        
-        if result > Int32.max {
-            return Int(Int32.max)
-        }
-        
-        if result < Int32.min {
-            return Int(Int32.min)
-        }
-        
-        return result
-    }
-    
-    static func myAtoi2(_ str: String) -> Int {
-     
-        // - 45 + 43  1-9 48-57
-        let temp = str.trimmingCharacters(in: CharacterSet.whitespaces)
-        if temp.count < 2 {
-            return Int(temp) ?? 0
-        }
-        
-        let unicodeScalars = temp.unicodeScalars.map { $0.value }
-        let first = unicodeScalars.first ?? 0
-        if !(first == 45 || first == 43 || (first >= 48 && first <= 57)) {
+        if index == length {
             return 0
         }
         
-        var endIndex = 1
-        while endIndex < unicodeScalars.count  {
-            let unicode = unicodeScalars[endIndex]
-            if !(unicode >= 48 && unicode <= 57) {
+        var negativeNumebr:Int = 1
+        let firstUnicode = unicodeScalars[index]
+        if firstUnicode == 45 {
+            negativeNumebr = -1
+            index += 1
+        } else if firstUnicode == 43 {
+            index += 1
+        } else if firstUnicode < 48 || firstUnicode > 57 {
+            return 0
+        }
+        
+        var result:Int = 0
+        while index < unicodeScalars.count {
+            
+            let unicode = unicodeScalars[index]
+            if unicode < 48 || unicode > 57 {
                 break
             }
-            endIndex += 1
-        }
-       
-        guard let result = Int(temp.prefix(endIndex)) else {
             
-            if endIndex > 11 {
-                
-                if first == 45 {
-                    return Int(Int32.min)
-                } else {
-                    return Int(Int32.max)
-                }
-            } else {
-                return 0
+            let temp = result * 10 + Int(unicode - 48)
+            if temp > Int32.max {
+                return Int(negativeNumebr > 0 ? Int32.max : Int32.min)
             }
+            result = temp
+            index += 1
         }
-        
-        if result > Int32.max {
-            return Int(Int32.max)
-        }
-        
-        if result < Int32.min {
-            return Int(Int32.min)
-        }
-        
-        return result
+        return result * negativeNumebr
     }
+    
 }
