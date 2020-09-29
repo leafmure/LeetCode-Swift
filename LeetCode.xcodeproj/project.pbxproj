@@ -19,6 +19,8 @@
 		043391D82521D70B003DBC75 /* StringToIntegerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043391D72521D70B003DBC75 /* StringToIntegerTest.swift */; };
 		04341CC6251C711A00D9B9C9 /*  LongestNoRepeatSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04341CC5251C711A00D9B9C9 /*  LongestNoRepeatSubstring.swift */; };
 		04341CC9251C747D00D9B9C9 /*  LongestNoRepeatSubstringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04341CC8251C747D00D9B9C9 /*  LongestNoRepeatSubstringTest.swift */; };
+		044D0A8825230B4F004EFAC1 /* PalindromeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D0A8725230B4F004EFAC1 /* PalindromeNumber.swift */; };
+		044D0A8C25230B61004EFAC1 /* PalindromeNumberTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D0A8B25230B61004EFAC1 /* PalindromeNumberTest.swift */; };
 		047A7C1425202FA600CD6E93 /* LongestPalindromicSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A7C1325202FA600CD6E93 /* LongestPalindromicSubstring.swift */; };
 		047A7C1825202FED00CD6E93 /* LongestPalindromicSubstringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A7C1725202FED00CD6E93 /* LongestPalindromicSubstringTest.swift */; };
 		04E6D021251B5A98000DE714 /* AddTwoNumbersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6D01E251B5A98000DE714 /* AddTwoNumbersTest.swift */; };
@@ -58,6 +60,9 @@
 		04341CC8251C747D00D9B9C9 /*  LongestNoRepeatSubstringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " LongestNoRepeatSubstringTest.swift"; sourceTree = "<group>"; };
 		04341CCC251CA51900D9B9C9 /* 3.Longest Substring Without Repeating Characters-无重复字符的最长子串.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "3.Longest Substring Without Repeating Characters-无重复字符的最长子串.md"; sourceTree = "<group>"; };
 		044D0A842523020E004EFAC1 /* 8.String to Integer (atoi)-字符串转换整数 (atoi).md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "8.String to Integer (atoi)-字符串转换整数 (atoi).md"; sourceTree = "<group>"; };
+		044D0A8725230B4F004EFAC1 /* PalindromeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumber.swift; sourceTree = "<group>"; };
+		044D0A8B25230B61004EFAC1 /* PalindromeNumberTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumberTest.swift; sourceTree = "<group>"; };
+		044D0A8E252328E3004EFAC1 /* 9.Palindrome Number-回文数.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "9.Palindrome Number-回文数.md"; sourceTree = "<group>"; };
 		047A7C1325202FA600CD6E93 /* LongestPalindromicSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstring.swift; sourceTree = "<group>"; };
 		047A7C1725202FED00CD6E93 /* LongestPalindromicSubstringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstringTest.swift; sourceTree = "<group>"; };
 		047A7C1B25207A3A00CD6E93 /* 5.Longest Palindromic Substring-最长回文子串.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "5.Longest Palindromic Substring-最长回文子串.md"; sourceTree = "<group>"; };
@@ -117,6 +122,7 @@
 				041421F12520898100EA4F06 /* 6.ZigZag Conversion-Z 字形变换 */,
 				043391CB2521D53C003DBC75 /* 7.Reverse Integer-整数反转 */,
 				043391D22521D6D2003DBC75 /* 8.String to Integer (atoi)-字符串转换整数 (atoi) */,
+				044D0A8625230B0D004EFAC1 /* 9.Palindrome Number-回文数 */,
 				041FDF3E2519EEEF0003DFB9 /* main.swift */,
 				041FDF4F2519F0520003DFB9 /* TestProtocol.swift */,
 			);
@@ -161,6 +167,16 @@
 				04341CC8251C747D00D9B9C9 /*  LongestNoRepeatSubstringTest.swift */,
 			);
 			path = "3.Longest Substring Without Repeating Characters-无重复字符的最长子串";
+			sourceTree = "<group>";
+		};
+		044D0A8625230B0D004EFAC1 /* 9.Palindrome Number-回文数 */ = {
+			isa = PBXGroup;
+			children = (
+				044D0A8E252328E3004EFAC1 /* 9.Palindrome Number-回文数.md */,
+				044D0A8725230B4F004EFAC1 /* PalindromeNumber.swift */,
+				044D0A8B25230B61004EFAC1 /* PalindromeNumberTest.swift */,
+			);
+			path = "9.Palindrome Number-回文数";
 			sourceTree = "<group>";
 		};
 		047A7C1225202F5800CD6E93 /* 5.Longest Palindromic Substring-最长回文子串 */ = {
@@ -263,9 +279,11 @@
 				04341CC6251C711A00D9B9C9 /*  LongestNoRepeatSubstring.swift in Sources */,
 				043391CF2521D55B003DBC75 /* ReverseInteger.swift in Sources */,
 				041FDF4A2519EF960003DFB9 /* TwoSum.swift in Sources */,
+				044D0A8C25230B61004EFAC1 /* PalindromeNumberTest.swift in Sources */,
 				047A7C1825202FED00CD6E93 /* LongestPalindromicSubstringTest.swift in Sources */,
 				041FDF3F2519EEEF0003DFB9 /* main.swift in Sources */,
 				04E6D022251B5A98000DE714 /* AddTwoNumbers.swift in Sources */,
+				044D0A8825230B4F004EFAC1 /* PalindromeNumber.swift in Sources */,
 				041FDF4D2519EFF70003DFB9 /* TwoSumTest.swift in Sources */,
 				041FDF502519F0520003DFB9 /* TestProtocol.swift in Sources */,
 			);

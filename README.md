@@ -17,3 +17,4 @@ LeetCode 是一个在线评判算法解题的网站，题库中包含许多公�
 |6.ZigZag Conversion-Z 字形变换| Swift |O(n) | O(n) | 中等 |
 |7.Reverse Integer-整数反转|Swift |O(n) | O(1) | 简单 |
 |8.String to Integer (atoi)-字符串转换整数 (atoi)| Swift |O(n) | O(n) | 中等 |
+|9.Palindrome Number-回文数| Swift |O(n) | O(1) | 简单 |

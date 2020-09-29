@@ -9,5 +9,5 @@ import Foundation
 
 print("Hello, World!")
 
-let objc = StringToIntegerTest()
+let objc = PalindromeNumberTest()
 objc.test()
