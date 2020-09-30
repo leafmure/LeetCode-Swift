@@ -9,5 +9,7 @@ import Foundation
 
 print("Hello, World!")
 
-let objc = PalindromeNumberTest()
+let objc = RegularExpressionMatchingTest()
 objc.test()
+
+//print("\(RegularExpressionMatching.trimString(str: "z.*p."))")
