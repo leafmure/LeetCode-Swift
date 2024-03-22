@@ -14,7 +14,6 @@ class RegularExpressionMatching {
         
         if p.isEmpty {
             return s.isEmpty
-            
         }
             
         let signIndex = p.index(p.startIndex, offsetBy: 1)
@@ -29,58 +28,38 @@ class RegularExpressionMatching {
     }
     
     
-    
-    
-    
-    
-    
-    func isMatch2(_ s: String, _ p: String) -> Bool {
-            
-        if p.isEmpty {
-            return s.isEmpty
-        }
-            
-            let s_table = Array(s)
-            let p_table = Array(p)
-            
-            var s_index = 0
-            var p_index = 0
-            var isAny = false
-            while s_index < s_table.count && p_index < p_table.count {
-                
-                let s_char = s_table[s_index]
-                let p_char = p_table[p_index]
-                if p_char == s_char || p_char == "." {
-                    
-                    s_index += 1
-                    p_index += 1
-                    if p_index < p_table.count && p_table[p_index] == "*" {
-                        isAny = true
+    static func isMatch2(_ s: String, _ p: String) -> Bool {
+        
+        let s_chars = Array(s)
+        let p_chars = Array(p)
+        let s_chars_length = s_chars.count
+        let p_chars_length = p_chars.count
+        var matchTable = Array(repeating: Array(repeating: false, count: p_chars_length + 1), count: s_chars_length + 1)
+        matchTable[0][0] = true
+        for i in 0..<s_chars_length + 1 {
+            for j in 1..<p_chars_length + 1 {
+                print("开始处理 \(i) - \(j)")
+                if p_chars[j-1] == "*" {
+                    matchTable[i][j] = matchTable[i][j-2]
+                    if matches(s_chars: s_chars, p_chars: p_chars, i: i, j: j-1) {
+                        matchTable[i][j] = matchTable[i][j] || matchTable[i-1][j]
                     }
-                } else if p_char == "*" {
-                    
-                    if p_index > 0 {
-                        
-                        let p_pre_char = p_table[p_index - 1]
-                        if p_pre_char == s_char {
-                            s_index += 1
-                        } else if p_pre_char == "."  {
-                            s_index += 1
-                            isAny = true
-                        } else {
-                            p_index += 1
-                        }
-                    } else {
-                        p_index += 1
-                    }
-                } else if (p_index + 1 <  p_table.count && p_table[p_index + 1] == "*") {
-                    p_index += 2
                 } else {
-                    return false
+                    if matches(s_chars: s_chars, p_chars: p_chars, i: i, j: j) {
+                        matchTable[i][j] = matchTable[i-1][j-1]
+                    }
                 }
             }
-            
-        return (p_index >= p_table.count) 
         }
+        return matchTable[s_chars_length][p_chars_length]
+    }
+    
+    static func matches(s_chars: [String.Element], p_chars: [String.Element], i: Int, j: Int) -> Bool {
+        if i == 0 { return false }
+        if p_chars[j-1] == "." {
+            return true
+        }
+        return s_chars[i-1] == p_chars[j-1]
+    }
 
 }

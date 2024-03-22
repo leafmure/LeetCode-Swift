@@ -16,13 +16,13 @@ class RegularExpressionMatchingTest: TestProtocol {
     func testData() {
         
         
-        s = "aaaa"
-        p = "a.*a.*c*b*a"
+        s = ""
+        p = ""
         check = true
     }
     
     func testTargetCode() -> Any {
-        return RegularExpressionMatching.isMatch(s, p)
+        return RegularExpressionMatching.isMatch2(s, p)
     }
     
     func checkResult(result: Any) -> Bool {

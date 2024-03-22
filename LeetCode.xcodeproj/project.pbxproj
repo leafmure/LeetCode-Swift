@@ -118,7 +118,6 @@
 		041FDF3D2519EEEF0003DFB9 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
-				045A6FD225241A790060A48B /* 10.Regular Expression Matching-正则表达式匹配 */,
 				041FDF462519EF2A0003DFB9 /* 1.Two Sum-两数之和 */,
 				04E6D01D251B5A98000DE714 /* 2.Add Two Numbers-两数相加 */,
 				04341CC4251C70A500D9B9C9 /* 3.Longest Substring Without Repeating Characters-无重复字符的最长子串 */,
@@ -128,6 +127,7 @@
 				043391CB2521D53C003DBC75 /* 7.Reverse Integer-整数反转 */,
 				043391D22521D6D2003DBC75 /* 8.String to Integer (atoi)-字符串转换整数 (atoi) */,
 				044D0A8625230B0D004EFAC1 /* 9.Palindrome Number-回文数 */,
+				045A6FD225241A790060A48B /* 10.Regular Expression Matching-正则表达式匹配 */,
 				041FDF3E2519EEEF0003DFB9 /* main.swift */,
 				041FDF4F2519F0520003DFB9 /* TestProtocol.swift */,
 			);
